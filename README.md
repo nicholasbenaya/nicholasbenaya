@@ -1,4 +1,4 @@
-<img src="assets/banner.svg" alt="Nicholas Benaya, Computer Engineering student at ITS Surabaya" width="100%">
+ <img src="assets/banner.svg" alt="Nicholas Benaya, Computer Engineering student at ITS Surabaya" width="100%">
 
 I'm a Computer Engineering student at ITS Surabaya, based between Surabaya and Samarinda. I like knowing how things work underneath: databases that stay correct under concurrent writes, protocols built straight on sockets, and image algorithms written out from the math instead of imported.
 
