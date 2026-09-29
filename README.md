@@ -4,7 +4,7 @@ I'm a Computer Engineering student at ITS Surabaya, based between Surabaya and S
 
 <a href="mailto:nicholasbenaya17@gmail.com"><img src="https://img.shields.io/badge/Email-ee6c4d?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 <a href="https://instagram.com/nicholasbenaya_"><img src="https://img.shields.io/badge/Instagram-7fd1ae?style=for-the-badge&logo=instagram&logoColor=1d2340" alt="Instagram"></a>
-<a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-f4d35e?style=for-the-badge&logo=linkedin&logoColor=1d2340" alt="LinkedIn"></a>
+<a href="https://www.linkedin.com/in/nicholasbenaya"><img src="https://img.shields.io/badge/LinkedIn-f4d35e?style=for-the-badge&logo=linkedin&logoColor=1d2340" alt="LinkedIn"></a>
 
 ## Tools I use
 
