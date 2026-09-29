@@ -1,64 +1,73 @@
-# Nicholas Benaya
+<img src="assets/banner.svg" alt="Nicholas Benaya, Computer Engineering student at ITS Surabaya" width="100%">
 
-Computer Engineering student at Institut Teknologi Sepuluh Nopember (ITS), Surabaya. Based between Surabaya and Samarinda.
+I'm a Computer Engineering student at ITS Surabaya, based between Surabaya and Samarinda. I like knowing how things work underneath: databases that stay correct under concurrent writes, protocols built straight on sockets, and image algorithms written out from the math instead of imported.
 
-I like understanding how things work underneath: databases that stay consistent under concurrent writes, protocols built directly on sockets, and image algorithms written out from the math instead of called from a library. Most of my work is backend systems, with a side of graphics and networking.
+<a href="mailto:nicholasbenaya17@gmail.com"><img src="https://img.shields.io/badge/Email-ee6c4d?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://instagram.com/nicholasbenaya_"><img src="https://img.shields.io/badge/Instagram-7fd1ae?style=for-the-badge&logo=instagram&logoColor=1d2340" alt="Instagram"></a>
+<a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-f4d35e?style=for-the-badge&logo=linkedin&logoColor=1d2340" alt="LinkedIn"></a>
 
-[Email](mailto:nicholasbenaya17@gmail.com) · [Instagram](https://instagram.com/nicholasbenaya_) · [LinkedIn](https://linkedin.com)
+## Tools I use
 
----
-
-## What I work with
-
-**Backend:** Node.js, Express, TypeScript, Prisma, MySQL / TiDB, Jest, Supertest, S3-compatible storage
-
-**Systems and graphics:** C, C++, SFML, spatial partitioning (quadtrees, spatial hashing)
-
-**Networking:** Python raw sockets (UDP and TCP), service discovery, multi-VM IPv6 setups, shell and PowerShell scripting
-
-**Vision:** Python, NumPy, OpenCV, Matplotlib
-
-**Client side:** Next.js 14, Tailwind CSS, Flutter and Dart
-
----
+<table>
+  <tr>
+    <td width="130"><b>Backend</b></td>
+    <td><img src="https://skillicons.dev/icons?i=nodejs,express,ts,prisma,mysql,jest,aws" alt="Node.js, Express, TypeScript, Prisma, MySQL, Jest, AWS"></td>
+  </tr>
+  <tr>
+    <td><b>Systems and vision</b></td>
+    <td><img src="https://skillicons.dev/icons?i=c,cpp,python,opencv" alt="C, C++, Python, OpenCV"></td>
+  </tr>
+  <tr>
+    <td><b>Client side</b></td>
+    <td><img src="https://skillicons.dev/icons?i=nextjs,tailwind,flutter,dart" alt="Next.js, Tailwind, Flutter, Dart"></td>
+  </tr>
+  <tr>
+    <td><b>Workflow</b></td>
+    <td><img src="https://skillicons.dev/icons?i=git,bash,powershell" alt="Git, Bash, PowerShell"></td>
+  </tr>
+</table>
 
 ## Projects
 
-### [GameVault API](https://github.com/nicholasbenaya/gamestore-be)
-Node.js, Express, Prisma, MySQL/TiDB, Jest, Sharp, S3/MinIO
-
-REST backend for a digital game store with separate user and publisher roles.
-
-- Wallet top-ups and checkout run inside database transactions, so concurrent requests can't corrupt balances. Checkout applies the discount, debits the wallet, adds the game to the buyer's library, and clears it from their wishlist as one atomic step.
-- Integration tests with Jest and Supertest run before features are merged.
-- Image uploads are processed in memory, converted to lossless WebP with Sharp, then stored in S3-compatible storage.
-
-### [Particle Collision Simulation](https://github.com/nicholasbenaya/collision-simulation)
-C++, SFML
-
-Real-time particle collisions where brute-force pair checking (O(N²)) stopped scaling. I replaced it with a spatial hash detector whose cell size scales with particle mass, which keeps the frame rate steady as density goes up. The detector is modular, so it can be benchmarked against the naive approach.
-
-### [UDP Chat with a Custom DNS Service](https://github.com/nicholasbenaya/simple-client-server)
-Python, raw sockets
-
-A LAN chat system with no configuration. Rooms register themselves with a local name service over UDP broadcast, and clients discover them the same way. Supports switching rooms while connected, public and private rooms, and clean socket shutdown. No networking frameworks.
-
-### [Computer Vision Labs](https://github.com/nicholasbenaya/PCV_Tugas)
-Python, NumPy, Matplotlib
-
-Coursework where I implemented the algorithms myself rather than calling them:
-
-- 2D convolution with zero-padding, plus Gaussian, Laplacian, and Sobel kernels
-- Histogram equalization from the CDF
-- Point transforms: gamma correction, log scaling, contrast stretching
-
-### [help-umkm](https://github.com/nicholasbenaya/help-umkm)
-Next.js 14, React, Tailwind CSS
-
-A monorepo of free websites for small Indonesian businesses. The first one shipped is for Nadia Studio, a florist and makeup artist in Samarinda: a clean minimalist site with built-in analytics and WhatsApp lead tracking, and no database to pay for or maintain.
-
----
-
-## Currently
-
-Going deeper on backend fundamentals (transactions, testing, storage) and networking below the framework level.
+<table>
+  <tr>
+    <td width="45%"><img src="assets/p1-transaction.svg" alt="Checkout steps wrapped in one database transaction"></td>
+    <td valign="top">
+      <h3><a href="https://github.com/nicholasbenaya/gamestore-be">GameVault API</a></h3>
+      A REST backend for a digital game store, with separate user and publisher roles. Wallet top-ups and checkout run inside database transactions, so concurrent requests can't corrupt a balance. Uploaded images are converted to lossless WebP with Sharp and stored in S3-compatible storage, and every feature is covered by Jest and Supertest integration tests before merging.<br><br>
+      <sub>Node.js, Express, Prisma, MySQL/TiDB, Sharp, S3/MinIO</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="45%"><img src="assets/p2-collision.svg" alt="Particles in a grid, with crowded cells highlighted"></td>
+    <td valign="top">
+      <h3><a href="https://github.com/nicholasbenaya/collision-simulation">Particle Collision Simulation</a></h3>
+      Checking every pair of particles (O(N²)) stops scaling quickly. This engine only compares particles that share a grid cell, and the cell size adapts to particle mass, so frame rates hold up as density grows. The detector is modular, so it can be benchmarked against the brute-force version.<br><br>
+      <sub>C++, SFML, spatial hashing</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="45%"><img src="assets/p3-udp.svg" alt="A name service broadcasting to chat rooms"></td>
+    <td valign="top">
+      <h3><a href="https://github.com/nicholasbenaya/simple-client-server">UDP Chat with a Custom DNS Service</a></h3>
+      A LAN chat system that needs no configuration. Rooms register with a local name service over UDP broadcast, and clients find them the same way. It supports switching rooms while connected, public and private rooms, and clean socket shutdown, all without a networking framework.<br><br>
+      <sub>Python, raw UDP and TCP sockets</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="45%"><img src="assets/p4-vision.svg" alt="A 3x3 window sliding over image pixels"></td>
+    <td valign="top">
+      <h3><a href="https://github.com/nicholasbenaya/PCV_Tugas">Computer Vision Labs</a></h3>
+      Course exercises where I wrote the algorithms myself: 2D convolution with Gaussian, Laplacian and Sobel kernels, histogram equalization from the CDF, and point transforms like gamma correction, log scaling and contrast stretching.<br><br>
+      <sub>Python, NumPy, Matplotlib</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="45%"><img src="assets/p5-site.svg" alt="A small business website with a WhatsApp button"></td>
+    <td valign="top">
+      <h3><a href="https://github.com/nicholasbenaya/help-umkm">help-umkm</a></h3>
+      Free websites for small Indonesian businesses. The first one is for Nadia Studio, a florist and makeup artist in Samarinda: a minimalist site with built-in analytics and WhatsApp lead tracking, and no database to pay for or maintain.<br><br>
+      <sub>Next.js 14, React, Tailwind CSS</sub>
+    </td>
+  </tr>
+</table>
